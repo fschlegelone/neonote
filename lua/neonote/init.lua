@@ -15,4 +15,6 @@ function M.select_notes()
 	end
 end
 
+vim.cmd("command! Neonote lua require('neonote').select_notes()")
+
 return M
