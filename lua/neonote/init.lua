@@ -9,4 +9,13 @@ function M.open()
 	})
 end
 
+function M.setup()
+	vim.api.nvim_set_keymap(
+		"n",
+		"<leader>nn",
+		"<cmd>lua require('neonote').open()<CR>",
+		{ noremap = true, silent = true }
+	)
+end
+
 return M
