@@ -9,7 +9,7 @@ M.setup = function(config)
 end
 
 -- telescope integration
-M.open_telescope = function()
+M.open = function()
 	local telescope = require("telescope.builtin")
 
 	-- List all .md files in the note directory
